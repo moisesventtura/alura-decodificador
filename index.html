@@ -19,15 +19,15 @@
             <div class="left-side">
                 <img class="logo-alura" src="img/logo-alura.svg" alt="Logotipo Alura">
                 <form>
-                    <textarea id="main-text" type="text"  placeholder="Digite seu texto"></textarea>
+                    <textarea id="main-text" type="text" placeholder="Digite seu texto"></textarea>
                     <div>
                         <div class="warning">
                             <img src="img/warning.svg">
                             <span>Apenas letras minúsculas e sem acento.</span>
                         </div>
                         <div class="button-area">
-                            <button class="btn-primary">Criptografar</button>
-                            <button class="btn-outline">Descriptografar</button>
+                            <button class="btn-primary" id="criptografar">Criptografar</button>
+                            <button class="btn-outline" id="descriptografar">Descriptografar</button>
                         </div>
                     </div>
                 </form>
@@ -38,12 +38,17 @@
                     <h3 class="no-message-feedback-title">Nenhuma mensagem encontrada</h3>
                     <p>Digite um texto que você deseja criptografar ou descriptografar</p>
                 </div>
+                <div class="texto-criptografado d-none">
+                    <p></p>
+                    <button class="btn-outline" id="copiar">Copiar</button>
+                </div>
             </div>
         </div>
     </main>
 
     <script src="js/conversion.js"></script>
     <script src="js/cryptography.js"></script>
+    <script src="js/copy-text.js"></script>
 </body>
 
 </html>
