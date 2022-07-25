@@ -119,6 +119,7 @@ button.btn-outline {
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
     margin: 40px 40px 40px 100px;
+    padding: 8px 8px 8px 8px;
 }
 
 .no-message-feedback img {
