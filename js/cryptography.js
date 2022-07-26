@@ -13,7 +13,14 @@ function getTextCriptografado() {
         textTeste.classList.remove("d-none");
 
         var paragrafo = document.querySelector(".texto-criptografado p");
-        paragrafo.innerText = textoCriptografado;
+
+        var minusculas = textoCriptografado.toLowerCase();
+
+        if (textoCriptografado === minusculas) {
+            paragrafo.textContent = textoCriptografado;
+        } else {
+            paragrafo.textContent = "Apenas letras minúsculas e sem acento."
+        }
     })
 }
 
@@ -25,7 +32,7 @@ function getTextDescriptografado() {
 
     btnCryptography.addEventListener("click", function (event) {
         event.preventDefault();
-        const textoCriptografado = descriptografaTexto(campoTexto.value);
+        const textoDescriptografado = descriptografaTexto(campoTexto.value);
 
         var noMessage = document.querySelector(".no-message-feedback");
         noMessage.classList.add("d-none");
@@ -34,7 +41,14 @@ function getTextDescriptografado() {
         textTeste.classList.remove("d-none");
 
         var paragrafo = document.querySelector(".texto-criptografado p");
-        paragrafo.innerText = textoCriptografado;
+
+        var minusculas = textoDescriptografado.toLowerCase();
+
+        if (textoDescriptografado === minusculas) {
+            paragrafo.textContent = textoDescriptografado;
+        } else {
+            paragrafo.textContent = "Apenas letras minúsculas e sem acento."
+        }
     })
 }
 
