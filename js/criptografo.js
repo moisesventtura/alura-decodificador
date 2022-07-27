@@ -1,16 +1,16 @@
-function getTextCriptografado() {
-    var campoTexto = document.getElementById("main-text");
+function criptografa() {
+    var campoTexto = document.getElementById("texto-principal");
     var btnCryptography = document.querySelector("#criptografar");
 
     btnCryptography.addEventListener("click", function (event) {
         event.preventDefault();
         const textoCriptografado = criptografaTexto(campoTexto.value);
 
-        var noMessage = document.querySelector(".no-message-feedback");
-        noMessage.classList.add("d-none");
+        var campoVazio = document.querySelector(".sem-retorno");
+        campoVazio.classList.add("d-none");
 
-        var textTeste = document.querySelector(".texto-criptografado");
-        textTeste.classList.remove("d-none");
+        var campoPreenchido = document.querySelector(".texto-criptografado");
+        campoPreenchido.classList.remove("d-none");
 
         var paragrafo = document.querySelector(".texto-criptografado p");
 
@@ -24,21 +24,21 @@ function getTextCriptografado() {
     })
 }
 
-getTextCriptografado();
+criptografa();
 
-function getTextDescriptografado() {
-    var campoTexto = document.getElementById("main-text");
+function descriptografa() {
+    var campoTexto = document.getElementById("texto-principal");
     var btnCryptography = document.querySelector("#descriptografar");
 
     btnCryptography.addEventListener("click", function (event) {
         event.preventDefault();
         const textoDescriptografado = descriptografaTexto(campoTexto.value);
 
-        var noMessage = document.querySelector(".no-message-feedback");
-        noMessage.classList.add("d-none");
+        var campoVazio = document.querySelector(".sem-retorno");
+        campoVazio.classList.add("d-none");
 
-        var textTeste = document.querySelector(".texto-criptografado");
-        textTeste.classList.remove("d-none");
+        var campoPreenchido = document.querySelector(".texto-criptografado");
+        campoPreenchido.classList.remove("d-none");
 
         var paragrafo = document.querySelector(".texto-criptografado p");
 
@@ -52,5 +52,4 @@ function getTextDescriptografado() {
     })
 }
 
-
-getTextDescriptografado();
+descriptografa();

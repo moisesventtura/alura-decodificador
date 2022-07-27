@@ -33,7 +33,7 @@ body {
     padding: 0 30px;
 }
 
-.left-side {
+.esquerda {
     width: 60%;
     height: 100%;
     padding-top: 40px;
@@ -85,7 +85,7 @@ button {
     outline: none;
 }
 
-.warning {
+.alerta {
     font-family: 'Inter';
     font-size: 12px;
     color: var(--gray-400);
@@ -93,26 +93,26 @@ button {
     margin: 0 0 16px 8px;
 }
 
-.warning img {
+.alerta img {
     margin-bottom: -4px;
 }
 
-.button-area {
+.botoes {
     display: flex;
     gap: 20px;
 }
 
-button.btn-primary {
+button.bt-cripto {
     background-color: var(--dark-blue-300);
     color: #FFFFFF;
 }
 
-button.btn-outline {
+button.bt-descripto {
     background-color: #D8DFE8;
     color: var(--dark-blue-300);
 }
 
-.right-side {
+.direita {
     width: 40%;
     text-align: center;
     background: #FFFFFF;
@@ -122,11 +122,11 @@ button.btn-outline {
     padding: 8px 8px 8px 8px;
 }
 
-.no-message-feedback img {
+.sem-retorno img {
     margin: 150px 32px 0 32px;
 }
 
-.no-message-feedback-title {
+.titulo-sem-retorno {
     font-family: 'Inter';
     font-weight: 700;
     font-size: 24px;
@@ -136,7 +136,7 @@ button.btn-outline {
     margin: 32px 32px 32px 16px;
 }
 
-.no-message-feedback p {
+.sem-retorno p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
