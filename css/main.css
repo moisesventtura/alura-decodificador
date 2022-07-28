@@ -167,3 +167,18 @@ button.bt-descripto {
     display: none;
     pointer-events: none;
 }
+
+footer{
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient( var(--dark-blue-100), var(--dark-blue-200), var(--dark-blue-300)) ;
+    padding: 40px 0;
+    display: block;
+    height: auto;
+}
+
+.logo-link{
+    height: 70px;
+    margin: 15px 5px 20px 5px;
+}
+
