@@ -12,8 +12,11 @@
 
     .esquerda {
         width: 100%;
+    }
 
-
+    .bt-cripto,
+    .bt-descripto {
+        width: 100%;
     }
 
     form {
@@ -26,7 +29,9 @@
 
     form textarea {
         margin-top: 10px;
-        margin-bottom: 180px;
+        margin-bottom: 0;
+        resize: none;
+        height: 400px !important;
     }
 
     .alerta img {
@@ -45,24 +50,9 @@
     }
 
     .direita {
-        /* display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-content: flex-end; */
-        /*padding: 32px;*/
-        /* gap: 32px; */
-
         width: 100%;
         padding: 20px 10px 20px 10px;
         margin: 0;
-
-        /* float: none;
-        display: block;
-        margin: 50px auto 50px auto;
-        width: 85%;
-        padding: 20px 10px 20px 10px; */
-
     }
 
     #mensagem-nao-encontrada {
