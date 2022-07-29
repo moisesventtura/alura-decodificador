@@ -39,10 +39,11 @@ body {
     padding-top: 40px;
 }
 
-.logo-alura {
+.logo-alura:hover {
     height: 48px;
     margin-right: 100px;
-
+    transform: scale(1.2);
+    transition-duration: 0.5s;
 }
 
 form {
@@ -112,6 +113,11 @@ button.bt-descripto {
     color: var(--dark-blue-300);
 }
 
+button.bt-copiar {
+    background-color: #D8DFE8;
+    color: var(--dark-blue-300);
+}
+
 .direita {
     width: 40%;
     text-align: center;
@@ -120,6 +126,10 @@ button.bt-descripto {
     border-radius: 32px;
     margin: 40px 40px 40px 100px;
     padding: 8px 8px 8px 8px;
+}
+
+.texto-criptografado p {
+    overflow: auto;
 }
 
 .sem-retorno img {
@@ -168,17 +178,21 @@ button.bt-descripto {
     pointer-events: none;
 }
 
-footer{
+footer {
     text-align: center;
     color: #FFFFFF;
-    background: linear-gradient( var(--dark-blue-100), var(--dark-blue-200), var(--dark-blue-300)) ;
+    background: linear-gradient(var(--dark-blue-100), var(--dark-blue-200), var(--dark-blue-300));
     padding: 40px 0;
     display: block;
     height: auto;
 }
 
-.logo-link{
+.logo-link {
     height: 70px;
     margin: 15px 5px 20px 5px;
 }
 
+.logo-link:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}

@@ -1,4 +1,4 @@
-let textArea = document.querySelector("#main-text");
+let textArea = document.querySelector("#texto-principal");
 textArea.addEventListener('input', autoResize, false);
 
 function autoResize() {
