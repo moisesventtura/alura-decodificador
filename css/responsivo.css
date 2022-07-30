@@ -1,7 +1,8 @@
 @media screen and (max-width: 480px) {
 
     .container {
-
+        height: auto;
+        max-height: unset;
         display: flex;
         flex-direction: column;
     }
@@ -28,7 +29,7 @@
     }
 
     form textarea {
-        margin-top: 10px;
+        margin-top: 50px;
         margin-bottom: 0;
         resize: none;
         height: 400px !important;
@@ -49,10 +50,20 @@
         padding-left: 0;
     }
 
+    .bt-copiar {
+        margin-top: 30px;
+    }
+
     .direita {
         width: 100%;
         padding: 20px 10px 20px 10px;
         margin: 0;
+        margin-top: 20px;
+        height: auto;
+    }
+
+    .texto-pricipal p {
+        margin-bottom: 20px;
     }
 
     #mensagem-nao-encontrada {

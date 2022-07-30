@@ -16,7 +16,17 @@ function criptografa() {
 
         var minusculas = textoCriptografado.toLowerCase();
 
-        if (textoCriptografado === minusculas) {
+        //verifica se tem caracter especial
+        function temCaracterEspecial(str) {
+            const specialChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+            return specialChars.test(str);
+        }
+
+        //Lógica para verificar se o texto tem acento
+        var comAcento = textoCriptografado;
+        var semAcento = comAcento.normalize("NFD");
+
+        if (textoCriptografado === minusculas && textoCriptografado === semAcento && temCaracterEspecial(textoCriptografado) == false) {
             paragrafo.textContent = textoCriptografado;
         } else {
             paragrafo.textContent = "Apenas letras minúsculas e sem acento."
@@ -42,9 +52,22 @@ function descriptografa() {
 
         var paragrafo = document.querySelector(".texto-criptografado p");
 
+        //Verifica se tem letra minuscula
         var minusculas = textoDescriptografado.toLowerCase();
 
-        if (textoDescriptografado === minusculas) {
+        //verifica se tem caracter especial
+        function temCaracterEspecial(str) {
+            const specialChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+            return specialChars.test(str);
+        }
+
+        TODO: //Criar if para verificar se a string está vazia
+
+        //Lógica para verificar se o texto tem acento
+        var comAcento = textoDescriptografado;
+        var semAcento = comAcento.normalize("NFD");
+
+        if (textoDescriptografado === minusculas && textoDescriptografado === semAcento && temCaracterEspecial(textoDescriptografado) == false) {
             paragrafo.textContent = textoDescriptografado;
         } else {
             paragrafo.textContent = "Apenas letras minúsculas e sem acento."
