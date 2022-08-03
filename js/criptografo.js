@@ -61,8 +61,6 @@ function descriptografa() {
             return specialChars.test(str);
         }
 
-        TODO: //Criar if para verificar se a string está vazia
-
         //Lógica para verificar se o texto tem acento
         var comAcento = textoDescriptografado;
         var semAcento = comAcento.normalize("NFD");
